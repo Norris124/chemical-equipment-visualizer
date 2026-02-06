@@ -7,27 +7,24 @@ A full-stack application to upload chemical plant equipment data (CSV) and visua
 
 ---
 
-## 📌 Features
+📌 Features
 
 - Upload CSV file containing chemical equipment data
-- Backend processes data and returns:
-  - Total equipment count
-  - Average flowrate, pressure, temperature
-  - Equipment type distribution
+- Backend processes data and csv details
 - Interactive bar chart visualization (React + Chart.js)
 - Supports Web frontend and Desktop frontend (PyQt)
 - REST API built with Django
 
 ---
 
-## 🏗️ Tech Stack
+🏗️ Tech Stack
 
 ### Backend
 - Python
 - Django
 - Django REST Framework
 
-### Web Frontend
+Web Frontend
 - React
 - Axios
 - Chart.js
@@ -38,37 +35,9 @@ A full-stack application to upload chemical plant equipment data (CSV) and visua
 - Requests
 
 ---
+▶️ How to Run the Project
 
-## 📂 Project Structure
-
-```
-
-chemical-equipment-visualizer/
-│
-├── backend/
-│   ├── manage.py
-│   ├── api/
-│   └── requirements.txt
-│
-├── web-frontend/
-│   ├── src/
-│   ├── package.json
-│   └── public/
-│
-├── desktop-frontend/
-│   ├── app.py
-│   └── requirements.txt
-│
-├── sample_equipment_data.csv
-└── README.md
-
-````
-
-
-
-## ▶️ How to Run the Project
-
-### 1️⃣ Backend Setup
+1️⃣ Backend Setup
 
 ```bash
 cd backend
@@ -87,7 +56,7 @@ http://127.0.0.1:8000
 
 ---
 
-### 2️⃣ Web Frontend Setup
+2️⃣ Web Frontend Setup
 
 ```bash
 cd web-frontend
@@ -103,7 +72,7 @@ http://localhost:3000
 
 ---
 
-### 3️⃣ Desktop Frontend Setup (Optional)
+3️⃣ Desktop Frontend Setup 
 
 ```bash
 cd desktop-frontend
