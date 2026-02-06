@@ -1,117 +1,115 @@
-# chemical-equipment-visualizer
+
 
 ```markdown
-# Chemical Equipment Parameter Visualizer (Hybrid Web + Desktop App)
+# Chemical Equipment Visualizer
 
-## Project Overview
-This project is a hybrid application that runs both as a **web app** and a desktop app, allowing users to upload CSV files containing chemical equipment data and visualize parameters like flowrate, pressure, and temperature. The backend is powered by Django REST API, and both frontends consume the same API for consistency.
-
----
-
-## Features
-- Upload CSV files containing equipment data.
-- View summary statistics: total equipment, average flowrate, pressure, and temperature.
-- Visualize equipment type distribution using charts:
-  - **Web:** React + Chart.js
-  - **Desktop:** PyQt5 + Matplotlib
-- Maintain last 5 uploaded datasets.
-- Optional: Generate PDF reports.
-- Basic authentication for API access.
+A full-stack application to upload chemical plant equipment data (CSV) and visualize summary statistics and equipment distribution using interactive charts.
 
 ---
 
-## Tech Stack
-| Layer         | Technology                       | Purpose                                 |
-|---------------|---------------------------------|-----------------------------------------|
-| Frontend (Web)| React.js + Chart.js              | Display table + charts                  |
-| Frontend (Desktop) | PyQt5 + Matplotlib           | Desktop visualization                   |
-| Backend       | Python Django + Django REST Framework | API and data processing            |
-| Database      | SQLite                           | Store last 5 uploaded datasets          |
-| Data Handling | Pandas                           | CSV parsing & analytics                 |
-| Version Control | Git + GitHub                   | Collaboration & submission              |
+## 📌 Features
 
------
+- Upload CSV file containing chemical equipment data
+- Backend processes data and returns:
+  - Total equipment count
+  - Average flowrate, pressure, temperature
+  - Equipment type distribution
+- Interactive bar chart visualization (React + Chart.js)
+- Supports Web frontend and Desktop frontend (PyQt)
+- REST API built with Django
 
-## Setup Instructions
+---
+
+## 🏗️ Tech Stack
 
 ### Backend
-1. Navigate to backend folder:
- ```bash
- cd backend
-````
-
-2. Create and activate virtual environment:
-
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate  # Mac/Linux
-   venv\Scripts\activate     # Windows
-   ```
-3. Install dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. Run migrations:
-
-   ```bash
-   python manage.py migrate
-   ```
-5. Start the server:
-
-   ```bash
-   python manage.py runserver
-   ```
-6. Optional: Create superuser for admin access:
-
-   ```bash
-   python manage.py createsuperuser
-   ```
+- Python
+- Django
+- Django REST Framework
 
 ### Web Frontend
-
-1. Navigate to frontend folder:
-
-   ```bash
-   cd web-frontend
-   ```
-2. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-3. Start React app:
-
-   ```bash
-   npm start
-   ```
-4. Open browser at `http://localhost:3000` to access the web frontend.
+- React
+- Axios
+- Chart.js
 
 ### Desktop Frontend
-
-1. Navigate to desktop frontend folder:
-
-   ```bash
-   cd desktop-frontend
-   ```
-2. Install Python dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-   Required packages: `PyQt5`, `requests`, `matplotlib`, `pandas`
-3. Run app:
-
-   
-   python app.py
-   
+- Python
+- PyQt5
+- Requests
 
 ---
 
-## Usage
+## 📂 Project Structure
 
-1. Upload CSV file via Web or Desktop interface.
-2. View summary statistics and charts.
-3. Access last 5 datasets from history (if implemented).
+```
+
+chemical-equipment-visualizer/
+│
+├── backend/
+│   ├── manage.py
+│   ├── api/
+│   └── requirements.txt
+│
+├── web-frontend/
+│   ├── src/
+│   ├── package.json
+│   └── public/
+│
+├── desktop-frontend/
+│   ├── app.py
+│   └── requirements.txt
+│
+├── sample_equipment_data.csv
+└── README.md
+
+````
+
+
+
+## ▶️ How to Run the Project
+
+### 1️⃣ Backend Setup
+
+```bash
+cd backend
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
+```
+
+Backend will run at:
+
+```
+http://127.0.0.1:8000
+```
+
+---
+
+### 2️⃣ Web Frontend Setup
+
+```bash
+cd web-frontend
+npm install
+npm start
+```
+
+Web app runs at:
+
+```
+http://localhost:3000
+```
+
+---
+
+### 3️⃣ Desktop Frontend Setup (Optional)
+
+```bash
+cd desktop-frontend
+pip install -r requirements.txt
+python app.py
+```
+
+---
 
