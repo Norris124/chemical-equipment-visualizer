@@ -1,7 +1,4 @@
 # chemical-equipment-visualizer
-Sure! For your **Chemical Equipment Parameter Visualizer** project, here’s a **ready-to-use README** you can put in `README.md` in your repo. It covers **project overview, tech stack, setup, and running instructions** — perfect for submission.
-
----
 
 ```markdown
 # Chemical Equipment Parameter Visualizer (Hybrid Web + Desktop App)
@@ -131,7 +128,5 @@ Equipment Name, Type, Flowrate, Pressure, Temperature
 
 
 
-If you want, I can also make a **slimmer version** specifically for GitHub submission, around **1 page**, which looks super neat and clean for the reviewers — perfect for your 12-credit project.  
 
-Do you want me to make that version too?
 ```
