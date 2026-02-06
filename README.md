@@ -4,7 +4,7 @@
 # Chemical Equipment Parameter Visualizer (Hybrid Web + Desktop App)
 
 ## Project Overview
-This project is a hybrid application that runs both as a **web app** and a **desktop app**, allowing users to upload CSV files containing chemical equipment data and visualize parameters like flowrate, pressure, and temperature. The backend is powered by **Django REST API**, and both frontends consume the same API for consistency.
+This project is a hybrid application that runs both as a **web app** and a desktop app, allowing users to upload CSV files containing chemical equipment data and visualize parameters like flowrate, pressure, and temperature. The backend is powered by Django REST API, and both frontends consume the same API for consistency.
 
 ---
 
@@ -30,18 +30,7 @@ This project is a hybrid application that runs both as a **web app** and a **des
 | Data Handling | Pandas                           | CSV parsing & analytics                 |
 | Version Control | Git + GitHub                   | Collaboration & submission              |
 
----
-
-## Sample Data
-- Sample CSV file: `sample_equipment_data.csv`
-- Expected columns:  
-```
-
-Equipment Name, Type, Flowrate, Pressure, Temperature
-
-````
-
----
+-----
 
 ## Setup Instructions
 
@@ -114,9 +103,9 @@ Equipment Name, Type, Flowrate, Pressure, Temperature
    Required packages: `PyQt5`, `requests`, `matplotlib`, `pandas`
 3. Run app:
 
-   ```bash
+   
    python app.py
-   ```
+   
 
 ---
 
@@ -126,7 +115,3 @@ Equipment Name, Type, Flowrate, Pressure, Temperature
 2. View summary statistics and charts.
 3. Access last 5 datasets from history (if implemented).
 
-
-
-
-```
